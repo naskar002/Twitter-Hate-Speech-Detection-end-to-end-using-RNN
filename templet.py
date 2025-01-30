@@ -16,6 +16,7 @@ file_list = [
     f"{project_name}/configuration/__init__.py",
     f"{project_name}/configuration/gcloud_syncer.py",
     f"{project_name}/contant/__init__.py",
+    f"{project_name}/entity/__init__.py",
     f"{project_name}/entity/artifact_entity.py",
     f"{project_name}/entity/config_entity.py",
     f"{project_name}/exception/__init__.py",
