@@ -30,7 +30,7 @@ file_list = [
     f"{project_name}/ml/models.py",
     "app.py",
     "demo.py",
-    "requirements.txt"
+    "requirements.txt",
     "Dockerfile",
     "setup.py",
     ".dockerignore"  
