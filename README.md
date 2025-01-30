@@ -6,11 +6,11 @@
 ```bash
 conda create -n hatevenv
 ```
-#### 1. Activate virtual environment
+#### 2. Activate virtual environment
 ```bash
 conda activate hatevenv
 ```
-#### 1. Download important libraries
+#### 3. Download important libraries
 ```bash
 pip install -r requirements.txt
 ```
