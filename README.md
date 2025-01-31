@@ -14,3 +14,13 @@ conda activate hatevenv
 ```bash
 pip install -r requirements.txt
 ```
+
+# Gcloud link
+https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
+
+initiate GCloud
+
+```bash
+gcloud init
+```
+
