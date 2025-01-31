@@ -1,6 +1,14 @@
 # Twitter-Hate-Speech-Detection-end-to-end-using-RNN
 
-## How to run the application
+## Project Workflow
+- constants
+- config_enity
+- artifact_enity
+- components
+- pipeline
+- app.py
+
+## How to run the application?
 
 #### 1. Create virtual environment
 ```bash
