@@ -7,5 +7,5 @@ class GcloudSync:
         os.system(command)
 
     def sync_folder_from_gcloud(self, gcp_bucket_url, destination, filename):
-        command = f"gcloud strorage cp gs://{gcp_bucket_url}/{filename} {destination}/{filename}"
+        command = f"gcloud storage cp gs://{gcp_bucket_url}/{filename} {destination}/{filename}"
         os.system(command)
