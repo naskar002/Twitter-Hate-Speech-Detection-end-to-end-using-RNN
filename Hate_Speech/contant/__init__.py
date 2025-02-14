@@ -1,5 +1,6 @@
 import os
 from datetime import datetime
+import torch
 
 #common constants
 TIMESTAMP:str = datetime.now().strftime("%m_%d_%Y_%H_%M_%S")
@@ -23,3 +24,23 @@ AXIS = 1
 INPLACE = True
 DROP_COLUMNS = ['Unnamed: 0','count','hate_speech','offensive_language','neither']
 CLASS = 'class'
+
+# Model Training constants
+MODEL_TRAINER_ARTIFACTS_DIR = "ModelTrainerArtifacts"
+TRAINED_MODEL_DIR = "trained_model"
+TRAINED_MODEL_NAME = "model.ckpt"
+X_TEST_FILE_NAME = "X_test.csv"
+Y_TEST_FILE_NAME = "Y_test.csv"
+
+X_TRAIN_FILE_NAME = 'X_train.csv'
+
+RANDOM_STATE = 32
+EPOCH = 5
+BATCH_SIZE = 32
+
+# Model Architecture constants
+MAX_WORDS = 50000
+MAX_LEN = 300
+LEARNING_RATE = 1e-3
+OPTIMIZER_NAME = "Adam"
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
