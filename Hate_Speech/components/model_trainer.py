@@ -2,6 +2,7 @@ import os
 import sys
 import pickle
 import pandas as pd
+import numpy as np
 from Hate_Speech.logger import logging
 from Hate_Speech.contant import *
 from Hate_Speech.exception import CustomException
