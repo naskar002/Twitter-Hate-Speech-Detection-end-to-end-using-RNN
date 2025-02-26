@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from Hate_Speech.contant import *
 import os
-import torch
+
 
 @dataclass
 class DataIngestionConfig:
@@ -42,4 +42,18 @@ class ModelTrainerConfig:
         self.RANDDOM_STATE = RANDOM_STATE
         self.BATCH_SIZE = BATCH_SIZE
         self.EPOCHS = EPOCH
-        
+
+@dataclass
+class ModelEvaluationConfig:  
+    def __init__(self):
+        self.MODEL_EVALUATION_MODDEL_DIR:str = os.path.join(os.getcwd(),ARTIFACTS_DIR,MODEL_EVALUATION_ARTIFACTS_DIR)
+        self.BEST_MODEL_DIR_PATH:str = os.path.join(self.MODEL_EVALUATION_MODDEL_DIR,BEST_MODEL_DIR)
+        self.BUCKET_NAME = BUCKET_NAME
+        self.MODEL_NAME = MODEL_NAME   
+
+@dataclass
+class ModelPusherConfig:
+    def __init__(self):
+        self.TRAINED_MODEL_PATH = os.path.join(os.getcwd(),ARTIFACTS_DIR,MODEL_TRAINER_ARTIFACTS_DIR)
+        self.BUCKET_NAME = BUCKET_NAME
+        self.MODEL_NAME = MODEL_NAME

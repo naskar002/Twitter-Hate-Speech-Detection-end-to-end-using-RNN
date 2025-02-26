@@ -102,7 +102,7 @@ class ModelTrainer:
 
             logging.info("Model training finished")
 
-            with open ('tokenizer.pickel','wb') as handle:
+            with open ('tokenizer.pickle','wb') as handle:
                 pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
             os.makedirs(self.model_trainer_config.TRAINED_MODEL_DIR,exist_ok=True)
 

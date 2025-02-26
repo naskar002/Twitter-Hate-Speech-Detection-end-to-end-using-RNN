@@ -44,3 +44,12 @@ MAX_LEN = 300
 LEARNING_RATE = 1e-3
 OPTIMIZER_NAME = "Adam"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+# Model evlauation constants
+MODEL_EVALUATION_ARTIFACTS_DIR = "ModelEvaluationArtifacts"
+BEST_MODEL_DIR = "best_Model"
+MODEL_EVALUATION_FILE_NAME = "loss.csv"
+
+MODEL_NAME = "model.ckpt"
+APP_HOST = "0.0.0.0"
+APP_PORT = 8080
